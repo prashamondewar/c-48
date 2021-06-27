@@ -13,14 +13,14 @@ function setup(){
     
     ground = new Ground(600,height,1200,20)
 
- var box = createSprite(100, 200, 30, 30);
- var stopper = createSprite(400, 200, 50, 50);
+ box = createSprite(100, 200, 30, 30);
+ stopper = createSprite(400, 200, 50, 50);
  stopper.velocityX = 0;
  stopper.velocityY = 20;
- var player = createSprite(90, 200, 50, 50)
+ player = createSprite(90, 200, 50, 50)
  player.x = mouseX;
  player.Y = mouseY;
- var stopper = createSprite(600, 200, 10, 100)
+ stopper = createSprite(600, 200, 10, 100)
 }
 
 function draw(){
