@@ -5,6 +5,11 @@ const Bodies = Matter.Bodies;
 var engine, world;
 var box,stopper, player,goal
 
+function preload{
+    box = loadImage(box.png);
+    stopper = loadImage(ball.png);
+    player = loadImage(glove.png);
+}
 function setup(){
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
@@ -14,10 +19,13 @@ function setup(){
     ground = new Ground(600,height,1200,20)
 
  box = createSprite(100, 200, 30, 30);
+ box.addImage(box.png)
  stopper = createSprite(400, 200, 50, 50);
+ stopper.addImage(ball.png);
  stopper.velocityX = 0;
  stopper.velocityY = 20;
  player = createSprite(90, 200, 50, 50)
+ player.addImage(glove.png);
  player.x = mouseX;
  player.Y = mouseY;
  stopper = createSprite(600, 200, 10, 100)
